@@ -127,3 +127,36 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# --- DP-Rewrite project specifics ---
+# Large/static assets (downloaded or generated)
+assets/embeds/**
+assets/snips_2017/**
+assets/atis/**
+
+# Experiment outputs and checkpoints
+results/**
+dump/**
+**/checkpoints/**
+
+# Large model/data artifacts
+*.npy
+*.npz
+*.pt
+*.pth
+*.bin
+*.zip
+*.tar
+*.tar.gz
+
+# Hugging Face & spaCy caches
+.cache/
+~/.cache/
+**/huggingface/**
+**/spacy/**
+
+# Temp files created by runs
+temp_*.txt
+word2idx.json
+vocab_*.npy
+embeds_*.npy
