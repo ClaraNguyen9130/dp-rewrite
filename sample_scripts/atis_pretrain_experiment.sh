@@ -1,0 +1,19 @@
+python main.py \
+  --mode pretrain \
+  --model adept \
+  --dataset atis \
+  --experiment adept_l2norm_pretrain \
+  --name pretrain_atis \
+  --output_dir results/ \
+  --asset_dir assets/ \
+  --embed_type glove \
+  --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
+  --embed_size 100 \
+  --epochs 1 \
+  --batch_size 16 \
+  --learning_rate 0.001 \
+  --early_stopping True \
+  --patience 1 \
+  --train_teacher_forcing_ratio 0.5 \
+  --clipping_constant 1.0 \
+  --seed 42
