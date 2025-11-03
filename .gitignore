@@ -139,6 +139,10 @@ results/**
 dump/**
 **/checkpoints/**
 
+# --- Push pretrain_atis except checkpoints ---
+!results/pretrain_atis/**
+results/pretrain_atis/checkpoints/**
+
 # --- Allow lightweight rewritten CSV files to be tracked ---
 !results/**/rewritten_*.csv
 
