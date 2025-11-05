@@ -1,0 +1,70 @@
+# ATIS Dataset
+python main.py \
+  --mode pretrain \
+  --model adept \
+  --dataset atis \
+  --experiment adept_l2norm_pretrain \
+  --name pretrain_atis \
+  --output_dir results/ \
+  --asset_dir assets/ \
+  --embed_type glove \
+  --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
+  --embed_size 100 \
+  --epochs 1 \
+  --batch_size 16 \
+  --learning_rate 0.001 \
+  --early_stopping True \
+  --patience 1 \
+  --train_teacher_forcing_ratio 0.5 \
+  --clipping_constant 1.0 \
+  --seed 42
+
+# Healthcare Dataset
+python main.py \
+  --mode pretrain \
+  --model adept \
+  --experiment adept_l2norm_pretrain \
+  --dataset custom \
+  --custom_train_path assets/healthcare/healthcare_train.csv \
+  --custom_valid_path assets/healthcare/healthcare_valid.csv \
+  --custom_test_path  assets/healthcare/healthcare_test.csv \
+  --name pretrain_healthcare \
+  --output_dir results/ \
+  --asset_dir assets/ \
+  --embed_type glove \
+  --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
+  --embed_size 100 \
+  --epochs 5 \
+  --batch_size 16 \
+  --learning_rate 0.001 \
+  --early_stopping True \
+  --patience 1 \
+  --train_teacher_forcing_ratio 0.5 \
+  --clipping_constant 1.0 \
+  --max_seq_len 48 \
+  --seed 42
+
+# Wiki Dataset
+python main.py \
+  --mode pretrain \
+  --model adept \
+  --experiment adept_l2norm_pretrain \
+  --dataset custom \
+  --custom_train_path assets/wiki/wiki_train.csv \
+  --custom_valid_path assets/wiki/wiki_valid.csv \
+  --custom_test_path  assets/wiki/wiki_test.csv \
+  --name pretrain_wiki \
+  --output_dir results/ \
+  --asset_dir assets/ \
+  --embed_type glove \
+  --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
+  --embed_size 100 \
+  --epochs 5 \
+  --batch_size 2 \
+  --learning_rate 0.001 \
+  --early_stopping True \
+  --patience 1 \
+  --train_teacher_forcing_ratio 0.5 \
+  --clipping_constant 1.0 \
+  --max_seq_len 48 \
+  --seed 42
