@@ -1,0 +1,2 @@
+BestValidLoss,BestValidAcc,BestValidF1,BestValidEpoch,TestLoss,TestAcc,TestF1,NumTrainableParams
+2.5140,0.7140,0.6493,0,2.8623,0.7081,0.6391,109502234
