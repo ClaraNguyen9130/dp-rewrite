@@ -1,3 +1,5 @@
+# For now, we did not run the downstream experiment on the original dataset due to limited time we got for this projects
+
 python ../main.py \
        --mode downstream \
        --model bert_downstream \
