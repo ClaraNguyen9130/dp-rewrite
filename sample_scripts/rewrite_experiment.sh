@@ -71,7 +71,7 @@ python main.py \
   --embed_type glove \
   --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
   --embed_size 100 \
-  --epochs 3 \
+  --epochs 5 \
   --batch_size 16 \
   --learning_rate 0.001 \
   --early_stopping True \
@@ -102,7 +102,7 @@ python main.py \
   --embed_type glove \
   --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
   --embed_size 100 \
-  --epochs 3 \
+  --epochs 5 \
   --batch_size 16 \
   --learning_rate 0.001 \
   --early_stopping True \
@@ -133,7 +133,7 @@ python main.py \
   --embed_type glove \
   --embed_dir_unprocessed assets/embeds/glove.6B.100d.txt \
   --embed_size 100 \
-  --epochs 3 \
+  --epochs 5 \
   --batch_size 16 \
   --learning_rate 0.001 \
   --early_stopping True \
